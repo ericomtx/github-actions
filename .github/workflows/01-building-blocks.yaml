@@ -13,7 +13,7 @@ jobs:
       steps:
         - name: 2nd step
           run: | 
-            echo "faillure msg"
-            exit 1    
+            echo "success msg"
+            exit 0    
         - name: end step
           run: echo "end game"
