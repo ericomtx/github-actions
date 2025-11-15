@@ -1,1 +1,19 @@
 name: 01 - Building Blocks
+
+on: push
+
+jobs:
+    echo-hello:
+      runs-on: ubuntu-latest
+      steps:
+        - name: 1st step
+          run: echo "starting ..."
+    echo-goodby:
+      runs-on: ubuntu-latest
+      steps:
+        - name: 2nd step
+          run: | 
+            echo "faillure msg"
+            exit 1    
+        - name: end step
+          run: echo "end game"
